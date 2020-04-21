@@ -1,7 +1,7 @@
 # Alfabetizacao-Realidade-Aumentada
 Projeto avaliativo da disciplina Engenharia de Software 3 <p>
 Tema: Aprendizagem de alfabetização para crianças com Realidade Aumentada <p>
-Curso: Análise e Desenvolvimento de Sistemas		Turma: 4º ADS A
+Curso: Análise e Desenvolvimento de Sistemas	<p>	Turma: 4º ADS A <p>
 Projeto AR.js – Engenharia de Software 3 <p>
 Professor:	  Giuliano Bertoti <p>
 Integrantes: 	Érica Santos
