@@ -1,5 +1,6 @@
 
-Tema: Aprendizagem de alfabetização para crianças com Realidade Aumentada .
+# Aprendizagem de alfabetização para crianças com Realidade Aumentad.
+
 Curso: Análise e Desenvolvimento de Sistemas.
 
 Turma: 4ºADS-A
