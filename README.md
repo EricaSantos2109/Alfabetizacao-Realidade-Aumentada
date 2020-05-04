@@ -29,3 +29,5 @@ Criar um aplicativo com intuito de ajudar crianças no processo de alfabetizaç�
 Documentação AFrame: https://aframe.io/ 
 
 Marker generator: https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
+
+Formas em 3D: https://poly.google.com/
