@@ -7,7 +7,7 @@ Turma: 4ºADS-A.
 
 Professor: Giuliano Bertoti .
 
-Integrantes: Érica Santos, Douglas Henrique e Stephanie Costa.
+Integrantes: Érica dos Santos (RA: 1460481821022), Douglas Henrique (RA: ) e Stephanie Costa (RA: ).
 
 ### Objetivo:
 Criar um aplicativo com intuito de ajudar crianças no processo de alfabetização, utilizando realidade aumentada, com as tecnologias HTML/JS utilizando as bibliotecas AR.JS com framework A-FRAME, aplicando-os na plataforma online CODEPEN, a fim de contribuir com a melhora da educação brasileira.
@@ -17,7 +17,7 @@ Criar um aplicativo com intuito de ajudar crianças no processo de alfabetizaç�
 
     `npm install -g live-server && live-server`
     
-    ou se prefirir use:
+    ou se preferir use:
     
     `python -m SimpleHTTPServer(ou python -m http.serverpara Python 3)`
 
