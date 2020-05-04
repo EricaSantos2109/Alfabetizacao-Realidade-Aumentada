@@ -19,11 +19,13 @@ Criar um aplicativo com intuito de ajudar crianças no processo de alfabetizaç�
     
     ou se preferir use:
     
-    `python -m SimpleHTTPServer(ou python -m http.serverpara Python 3)`
+    `python -m SimpleHTTPServer(ou python -m http.server para Python 3)`
 
 2. Rode o servidor, abra o projeto no navegador usando a URL local e a porta na qual o servidor está sendo executado.
 
     `http://localhost:8000`
+    
+3. Clique no arquivo html e permita o acesso a câmera.
 
 ### Links para consulta:
 Documentação AFrame: https://aframe.io/ 
