@@ -16,6 +16,10 @@ Criar um aplicativo com intuito de ajudar crianças no processo de alfabetizaç�
 1. Use um servidor local, abra o terminal no mesmo diretório do arquivo HTML e digite o comando:
 
     `npm install -g live-server && live-server`
+    
+    ou se prefirir use:
+    
+    `python -m SimpleHTTPServer(ou python -m http.serverpara Python 3)`
 
 
 ### Links para consulta:
