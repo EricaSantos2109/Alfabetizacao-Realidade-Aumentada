@@ -1,5 +1,8 @@
 
 Tema: Aprendizagem de alfabetização para crianças com Realidade Aumentada .
+Curso: Análise e Desenvolvimento de Sistemas.
+
+Turma: 4ºADS-A
 
 Professor:	 Giuliano Bertoti .
 
