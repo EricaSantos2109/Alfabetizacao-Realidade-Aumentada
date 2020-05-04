@@ -1,5 +1,5 @@
 
-# Aprendizagem de alfabetização para crianças com Realidade Aumentad.
+# Alfabetização  com Realidade Aumentada.
 
 Curso: Análise e Desenvolvimento de Sistemas.
 
