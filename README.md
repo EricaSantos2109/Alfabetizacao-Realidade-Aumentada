@@ -21,6 +21,9 @@ Criar um aplicativo com intuito de ajudar crianças no processo de alfabetizaç�
     
     `python -m SimpleHTTPServer(ou python -m http.serverpara Python 3)`
 
+2. Rode o servidor, abra o projeto no navegador usando a URL local e a porta na qual o servidor está sendo executado.
+
+       `http://localhost:8000`
 
 ### Links para consulta:
 Documentação AFrame: https://aframe.io/ 
