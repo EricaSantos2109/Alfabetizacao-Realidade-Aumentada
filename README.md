@@ -1,18 +1,21 @@
 
-# Alfabetização  com Realidade Aumentada.
+# Alfabetização com Realidade Aumentada.
 
 Curso: Análise e Desenvolvimento de Sistemas.
 
 Turma: 4ºADS-A
 
-Professor:	 Giuliano Bertoti .
+Professor: Giuliano Bertoti .
 
-Integrantes: 	Érica Santos, Douglas Henrique e Stephanie Costa.
+Integrantes: Érica Santos, Douglas Henrique e Stephanie Costa.
 
-Objetivo: Criar um aplicativo com intuito de ajudar crianças no processo de alfabetização, utilizando realidade aumentada, com as tecnologias HTML/JS utilizando as bibliotecas AR.JS com framework A-FRAME, aplicando-os na plataforma online CODEPEN, a fim de contribuir com a melhora da educação brasileira.
+### Objetivo:
+Criar um aplicativo com intuito de ajudar crianças no processo de alfabetização, utilizando realidade aumentada, com as tecnologias HTML/JS utilizando as bibliotecas AR.JS com framework A-FRAME, aplicando-os na plataforma online CODEPEN, a fim de contribuir com a melhora da educação brasileira.
 
 ## Passo a passo:
-1. Use um servidor local, abra o terminal no mesmo  diretório de seu arquivo HTML e digite o  comando :
+1. Use um servidor local, abra o terminal no mesmo diretório do arquivo HTML e digite o comando:
+
+
 ## Links para consulta:
 Documentação AFrame: https://aframe.io/ 
 
