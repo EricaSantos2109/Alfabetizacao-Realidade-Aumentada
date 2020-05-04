@@ -27,6 +27,10 @@ Criar um aplicativo com intuito de ajudar crianças no processo de alfabetizaç�
     
 3. Clique no arquivo html e permita o acesso a câmera.
 
+<img src="https://i.imgur.com/l3evl4S.jpg" alt="Descrição da imagem"/>
+
+<img src="https://i.imgur.com/F2AnWGJ.jpg" alt="Descrição da imagem"/>
+
 ### Links para consulta:
 Documentação AFrame: https://aframe.io/ 
 
