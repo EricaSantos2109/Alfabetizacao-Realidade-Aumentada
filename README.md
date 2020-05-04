@@ -8,7 +8,7 @@ Objetivo: Criar um aplicativo com intuito de ajudar crianças no processo de alf
 
 ## Passo a passo:
 1. Use um servidor local, abra o terminal no mesmo  diretório de seu arquivo HTML e digite o  comando abaixo:
-"' npm install -g live-server && live-server'"
+'''npm install -g live-server && live-server'''
 ## Links para consulta:
 Documentação AFrame: https://aframe.io/ <p>
 Marker generator: https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
