@@ -1,18 +1,27 @@
 
-## Alfabetização com Realidade Aumentada
+## ALFABETIZAÇÃO COM REALIDADE AUMENTADA - SOLETRANDO
 
-Curso: Análise e Desenvolvimento de Sistemas.
+**Curso:** Análise e Desenvolvimento de Sistemas.
 
-Turma: 4ºADS-A.
+**Disciplina:** Engenharia de Software III.
 
-Professor: Giuliano Bertoti .
+**Professor:** Giuliano Bertoti.
 
-Integrantes: Érica dos Santos (RA: 1460481821022), Douglas Henrique (RA: ) e Stephanie Costa (RA: 1460481821083).
+**Integrantes:**<ul> 
+<li>Érica dos Santos (RA: 1460481821022).</li>
+<li>Stephanie Costa (RA: 1460481821083).</li>
+</ul>
 
-### Objetivo:
+### INTRODUÇÃO:
+Com o desenvolvimento da globalização e da Era Digital a cada dia novas tecnologias vão surgindo em diversas áreas, incluindo, a área de educação e como consequência tem possibilitado aos profissionais da educação novas formas de interação nas salas de aula. A Realidade Aumentada está cada vez mais presente nas escolas e nas maneiras de estimular o desenvolvimento infantil, transformando a forma como as crianças aprendem.
+
+### OBJETIVO:
 Criar um aplicativo com intuito de ajudar crianças no processo de alfabetização, utilizando realidade aumentada, com as tecnologias HTML/JS utilizando as bibliotecas AR.JS com framework A-FRAME, aplicando-os na plataforma online CODEPEN, a fim de contribuir com a melhora da educação brasileira.
 
-### Passo a passo:
+<img src= "https://i.imgur.com/mbC4HUT.jpg" alt="Prototipo do jogo">
+
+
+### PASSO A PASSO:
 1. Use um servidor local, abra o terminal no mesmo diretório do arquivo HTML e digite o comando:
 
     `npm install -g live-server && live-server`
@@ -27,13 +36,26 @@ Criar um aplicativo com intuito de ajudar crianças no processo de alfabetizaç�
     
 3. Clique no arquivo html e permita o acesso a câmera.
 
-<img src="https://i.imgur.com/l3evl4S.jpg" alt="Descrição da imagem"/>
+***Servidor: Live Server***
+<img src="https://i.imgur.com/l3evl4S.jpg" alt="Servidor"/>
 
-<img src="https://i.imgur.com/F2AnWGJ.jpg" alt="Descrição da imagem"/>
+***Prototipo: Tela Inicial***
+<img src="https://i.imgur.com/jCBWBDB.jpg" alt="Tela Inicial">
 
-### Links para consulta:
+***Desenvolvimento Atual: Tela inicial***
+<img src="https://i.imgur.com/TRnYiLk.jpg" alt="Tela Inicial">
+
+***Jogo: Soletrar Urso***
+<img src="https://i.imgur.com/F2AnWGJ.jpg" alt="Jogo Urso"/>
+
+
+### LINKS PARA CONSULTA:
 Documentação AFrame: https://aframe.io/ 
 
 Marker generator: https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
 
 Formas em 3D: https://poly.google.com/
+
+Face Api: https://github.com/justadudewhohacks/face-api.js#models-face-expression-recognition
+
+Imgur (copiar o endereço da imagem): https://imgur.com/
