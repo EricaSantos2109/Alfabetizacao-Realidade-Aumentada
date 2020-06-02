@@ -1,14 +1,41 @@
-<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-<body style="margin: 0px; overflow: hidden;">
-    <a-scene embedded arjs="sourceType: webcam;">
-        <a-entity position="0 1.25 -7" geometry="primitive: plane; width: 3" material="color: #000000"
-            text="color: white; align: center; font: dejavu;
-              value: Como se chama este animal?">
-        </a-entity>
-        <a-entity gltf-model="url(scene.gltf)" scale="0.015625 0.015625 0.015625" position="0 -2 -11"></a-entity>
-        <a-entity camera>
-        </a-entity>
-    </a-scene>
+    canvas {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <video id="video" width="200" height="200" autoplay muted></video>
+  <a-scene embedded arjs="sourceType: webcam;" autoplay muted >
+      <a-entity position="2 2 -9" geometry="primitive: plane; width: 3" material="color: #000000"
+          text="color: white; align: center; font: dejavu;
+            value: Como se chama este animal?">
+      </a-entity>
+      <a-entity gltf-model="url(scene.gltf)" scale="0.015625 0.015625 0.015625" position="2 -2.09 -13"></a-entity>
+      <a-entity camera>
+      </a-entity>
+  </a-scene>
+
 </body>
+</html>
