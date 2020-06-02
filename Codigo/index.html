@@ -38,10 +38,9 @@
         <span class="glyphicon glyphicon-question-sign"></span>Como jogar?
       </button>
 
-      <button type="button" href="pdf-marcador.pdf" download class="btn btn-danger btn-lg">
-        <span class="glyphicon glyphicon-download-alt"></span>Baixar os
-        marcadores
-      </button>
+      <a id="btn-download" type="button" class="btn btn-danger btn-lg" href="../imagens-site/pdf-marcador.pdf" download>
+        <span class="glyphicon glyphicon-download-alt"></span>Visualizar marcadores
+      </a>
 
       <button type="button" href="#" class="btn btn-warning btn-lg">
         <span class="glyphicon glyphicon-remove-circle"></span>Sair
@@ -49,8 +48,16 @@
       <img style="margin-top: 7%;" src="../imagens-site/giz.png"></img>
     </div>
 
-    <script src="../../../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <!--
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="../../dist/util.js"></script>
     <script src="../../dist/button.js"></script>
+    
+    <script type="text/javascript">
+      $("#btn-download").click(function() {
+        window.location = '../imagens-site/pdf-marcador.pdf';
+      });
+    </script>
+    -->
   </body>
 </html>
