@@ -19,20 +19,20 @@
       justify-content: center;
       align-items: center;
     }
-
     canvas {
       position: absolute;
     }
   </style>
 </head>
 <body>
+  </a-link>
   <video id="video" width="200" height="200" autoplay muted></video>
   <a-scene embedded arjs="sourceType: webcam;" autoplay muted >
-      <a-entity position="2 2 -9" geometry="primitive: plane; width: 3" material="color: #000000"
+      <a-entity position="-1 2 -9" geometry="primitive: plane; width: 3" material="color: #000000"
           text="color: white; align: center; font: dejavu;
-            value: Como se chama este animal?">
+            value: Como se escreve o nome dessa figura?">
       </a-entity>
-      <a-entity gltf-model="url(scene.gltf)" scale="0.015625 0.015625 0.015625" position="2 -2.09 -13"></a-entity>
+      <a-entity gltf-model="url(scene.gltf)" scale="0.015625 0.015625 0.015625" position="-1 -2.09 -13"></a-entity>
       <a-entity camera>
       </a-entity>
   </a-scene>
