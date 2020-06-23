@@ -57,6 +57,13 @@ Criar um aplicativo com intuito de ajudar crianças no processo de alfabetizaç�
 
 <img src="https://imgur.com/5LjYuRe.jpg" alt="Tela PC">
 
+### PRINT'S DAS TELAS
+<img src="https://imgur.com/3sIMSVR.jpg" alt="Index">
+
+<img src="https://imgur.com/YZW4Z7l.jpg" alt="Como Jogar">
+
+<img src="https://imgur.com/tBIjg8M.jpg" alt="Regras">
+
 ### LINKS PARA CONSULTA:
 Documentação AFrame: https://aframe.io/ 
 
