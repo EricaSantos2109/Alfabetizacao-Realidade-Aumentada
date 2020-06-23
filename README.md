@@ -49,9 +49,9 @@ Criar um aplicativo com intuito de ajudar crianças no processo de alfabetizaç�
 <img src="https://i.imgur.com/F2AnWGJ.jpg" alt="Jogo Urso"/>
 
 ### PASSO A PASSO DE COMO JOGAR
-<img src="https://imgur.com/a/J0Bvgh6.jpg" alt="Passo Um">
+<img src="https://imgur.com/ctgXOLZ.jpg" alt="Passo Um">
 
-<img src="https://imgur.com/a/J0Bvgh6.jpg" alt="Passo Dois">
+<img src="https://imgur.com/dgP8t0d.jpg" alt="Passo Dois">
 
 <img src="https://imgur.com/fLmaY5E.jpg" alt="Passo Tres">
 
