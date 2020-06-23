@@ -42,9 +42,6 @@ Criar um aplicativo com intuito de ajudar crianças no processo de alfabetizaç�
 ***Prototipo: Tela Inicial***
 <img src="https://i.imgur.com/jCBWBDB.jpg" alt="Tela Inicial">
 
-***Desenvolvimento Atual: Tela inicial***
-<img src="https://i.imgur.com/TRnYiLk.jpg" alt="Tela Inicial">
-
 ***Jogo: Soletrar Urso***
 <img src="https://i.imgur.com/F2AnWGJ.jpg" alt="Jogo Urso"/>
 
