@@ -48,6 +48,14 @@ Criar um aplicativo com intuito de ajudar crianças no processo de alfabetizaç�
 ***Jogo: Soletrar Urso***
 <img src="https://i.imgur.com/F2AnWGJ.jpg" alt="Jogo Urso"/>
 
+### PASSO A PASSO DE COMO JOGAR
+<img src="https://imgur.com/a/J0Bvgh6.jpg" alt="Passo Um">
+
+<img src="https://imgur.com/a/J0Bvgh6.jpg" alt="Passo Dois">
+
+<img src="https://imgur.com/fLmaY5E.jpg" alt="Passo Tres">
+
+<img src="https://imgur.com/5LjYuRe.jpg" alt="Tela PC">
 
 ### LINKS PARA CONSULTA:
 Documentação AFrame: https://aframe.io/ 
