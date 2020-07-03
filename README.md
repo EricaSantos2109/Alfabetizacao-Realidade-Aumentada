@@ -42,12 +42,24 @@ Criar um aplicativo com intuito de ajudar crianças no processo de alfabetizaç�
 ***Prototipo: Tela Inicial***
 <img src="https://i.imgur.com/jCBWBDB.jpg" alt="Tela Inicial">
 
-***Desenvolvimento Atual: Tela inicial***
-<img src="https://i.imgur.com/TRnYiLk.jpg" alt="Tela Inicial">
-
 ***Jogo: Soletrar Urso***
 <img src="https://i.imgur.com/F2AnWGJ.jpg" alt="Jogo Urso"/>
 
+### PASSO A PASSO DE COMO JOGAR
+<img src="https://imgur.com/ctgXOLZ.jpg" alt="Passo Um">
+
+<img src="https://imgur.com/dgP8t0d.jpg" alt="Passo Dois">
+
+<img src="https://imgur.com/fLmaY5E.jpg" alt="Passo Tres">
+
+<img src="https://imgur.com/5LjYuRe.jpg" alt="Tela PC">
+
+### PRINT'S DAS TELAS
+<img src="https://imgur.com/3sIMSVR.jpg" alt="Index">
+
+<img src="https://imgur.com/YZW4Z7l.jpg" alt="Como Jogar">
+
+<img src="https://imgur.com/tBIjg8M.jpg" alt="Regras">
 
 ### LINKS PARA CONSULTA:
 Documentação AFrame: https://aframe.io/ 
