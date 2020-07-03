@@ -25,15 +25,108 @@
   </style>
 </head>
 <body>
+  <script>
+    let markerVisible = { "u": false, "r": false, "s": false, "o": false};
+    
+    AFRAME.registerComponent('registerevents', {
+        init: function () 
+        {
+            let marker = this.el;
+    
+            marker.addEventListener('markerFound', function() {
+                markerVisible[ marker.id ] = true;
+                // console.log( markerVisible );
+            });
+    
+            marker.addEventListener('markerLost', function() {
+                markerVisible[ marker.id ] = false;
+                // console.log( markerVisible );
+            });
+    
+        }
+    });
+    
+    AFRAME.registerComponent('run', 
+    {   
+       init: function()
+        {
+          //trocar 
+             //entityEl = document.querySelector("#");
+        },
+        
+        tick: function (time, deltaTime) 
+        {
+            if (markerVisible["u"] && markerVisible["r"] && markerVisible["s"] && markerVisible["o"]){
+              //trocar entityEl.object3D por outra coisa
+              //entityEl.object3D.visible = true ;
+              console.log("Parabéns!! Você acertou!!"); 
+           }else {
+             //trocar entityEl.object3D por outra coisa
+              //entityEl.object3D.visible = false ;
+              console.log("Errou! Tente novamente!"); 
+      }
+        }
+    });
+    
+    </script>
+
   </a-link>
   <video id="video" width="200" height="200" autoplay muted></video>
+
   <a-scene embedded arjs="sourceType: webcam;" autoplay muted >
       <a-entity position="-1 2 -9" geometry="primitive: plane; width: 3" material="color: #000000"
           text="color: white; align: center; font: dejavu;
             value: Como se escreve o nome dessa figura?">
       </a-entity>
       <a-entity gltf-model="url(scene.gltf)" scale="0.015625 0.015625 0.015625" position="-1 -2.09 -13"></a-entity>
-      <a-entity camera>
+          <a-marker preset="pattern"
+        type="pattern"
+        url="https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/patts%20dos%20marcadores/pattern-marcador_u.patt" id="u" registerevents>
+         <a-entity
+          gltf-model="url(https://raw.githubusercontent.com/yasminaraujoarantes/EngenhariaSoftwareIII/master/Models/UU.gltf)"
+          position="1 1 0"
+          scale="0.1 0.1 0.1"
+          rotation="-90 0 0"
+        >
+        </a-entity>
+    </a-marker>
+
+    <a-marker preset="pattern"
+        type="pattern"
+        url="https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/patts%20dos%20marcadores/pattern-marcador_r.patt" id="r" registerevents>
+        <a-entity
+          gltf-model="url(https://raw.githubusercontent.com/yasminaraujoarantes/EngenhariaSoftwareIII/master/Models/RR.gltf)"
+          position="1 1 0"
+          scale="0.1 0.1 0.1"
+          rotation="-90 0 0"
+        >
+        </a-entity>
+    </a-marker>
+  
+  <a-marker preset="pattern"
+        type="pattern"
+        url="https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/patts%20dos%20marcadores/pattern-marcador_s.patt" id="s" registerevents>
+        <a-entity
+          gltf-model="url(https://raw.githubusercontent.com/yasminaraujoarantes/EngenhariaSoftwareIII/master/Models/SS.gltf)"
+          position="1 1 0"
+          scale="0.1 0.1 0.1"
+          rotation="-90 0 0"
+        >
+        </a-entity>
+    </a-marker>
+  
+    <a-marker preset="pattern"
+        type="pattern"
+        url="https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/patts%20dos%20marcadores/pattern-marcador_o.patt" id="o" registerevents>
+        <a-entity
+          gltf-model="url(https://raw.githubusercontent.com/yasminaraujoarantes/EngenhariaSoftwareIII/master/Models/OO.gltf)"
+          position="1 1 0"
+          scale="0.1 0.1 0.1"
+          rotation="-90 0 0"
+        >
+        </a-entity>
+    </a-marker>
+      <a-entity run>
       </a-entity>
   </a-scene>
 
