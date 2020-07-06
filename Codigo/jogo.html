@@ -1,134 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-  <script defer src="face-api.min.js"></script>
-  <script defer src="script.js"></script>
-  <title>Document</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    canvas {
-      position: absolute;
-    }
-  </style>
-</head>
-<body>
-  <script>
-    let markerVisible = { "u": false, "r": false, "s": false, "o": false};
-    
-    AFRAME.registerComponent('registerevents', {
-        init: function () 
-        {
-            let marker = this.el;
-    
-            marker.addEventListener('markerFound', function() {
-                markerVisible[ marker.id ] = true;
-                // console.log( markerVisible );
-            });
-    
-            marker.addEventListener('markerLost', function() {
-                markerVisible[ marker.id ] = false;
-                // console.log( markerVisible );
-            });
-    
-        }
-    });
-    
-    AFRAME.registerComponent('run', 
-    {   
-       init: function()
-        {
-          //trocar 
-             //entityEl = document.querySelector("#");
-        },
-        
-        tick: function (time, deltaTime) 
-        {
-            if (markerVisible["u"] && markerVisible["r"] && markerVisible["s"] && markerVisible["o"]){
-              //trocar entityEl.object3D por outra coisa
-              //entityEl.object3D.visible = true ;
-              console.log("Parabéns!! Você acertou!!"); 
-           }else {
-             //trocar entityEl.object3D por outra coisa
-              //entityEl.object3D.visible = false ;
-              console.log("Errou! Tente novamente!"); 
-      }
-        }
-    });
-    
-    </script>
 
-  </a-link>
-  <video id="video" width="200" height="200" autoplay muted></video>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+		<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+		<script defer src="face-api.min.js"></script>
+		<script defer src="script.js"></script>
+		<title>Document</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				width: 100vw;
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			canvas {
+				position: absolute;
+			}
+		</style>
+	</head>
 
-  <a-scene embedded arjs="sourceType: webcam;" autoplay muted >
-      <a-entity position="-1 2 -9" geometry="primitive: plane; width: 3" material="color: #000000"
-          text="color: white; align: center; font: dejavu;
-            value: Como se escreve o nome dessa figura?">
-      </a-entity>
-      <a-entity gltf-model="url(scene.gltf)" scale="0.015625 0.015625 0.015625" position="-1 -2.09 -13"></a-entity>
-          <a-marker preset="pattern"
-        type="pattern"
-        url="https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/patts%20dos%20marcadores/pattern-marcador_u.patt" id="u" registerevents>
-         <a-entity
-          gltf-model="url(https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/Models/UU.gltf)"
-          position="1 1 0"
-          scale="0.1 0.1 0.1"
-          rotation="-90 0 0"
-        >
-        </a-entity>
-    </a-marker>
+	<body>
+		<script>
+			let markerVisible = { "u": false, "r": false, "s": false, "o": false };
+			let currentWord = [];
 
-    <a-marker preset="pattern"
-        type="pattern"
-        url="https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/patts%20dos%20marcadores/pattern-marcador_r.patt" id="r" registerevents>
-        <a-entity
-          gltf-model="url(https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/Models/RR.gltf)"
-          position="1 1 0"
-          scale="0.1 0.1 0.1"
-          rotation="-90 0 0"
-        >
-        </a-entity>
-    </a-marker>
-  
-  <a-marker preset="pattern"
-        type="pattern"
-        url="https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/patts%20dos%20marcadores/pattern-marcador_s.patt" id="s" registerevents>
-        <a-entity
-          gltf-model="url(https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/Models/SS.gltf)"
-          position="1 1 0"
-          scale="0.1 0.1 0.1"
-          rotation="-90 0 0"
-        >
-        </a-entity>
-    </a-marker>
-  
-    <a-marker preset="pattern"
-        type="pattern"
-        url="https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/patts%20dos%20marcadores/pattern-marcador_o.patt" id="o" registerevents>
-        <a-entity
-          gltf-model="url(https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/Models/OO.gltf)"
-          position="1 1 0"
-          scale="0.1 0.1 0.1"
-          rotation="-90 0 0"
-        >
-        </a-entity>
-    </a-marker>
-      <a-entity run>
-      </a-entity>
-  </a-scene>
+			AFRAME.registerComponent('registerevents', {
+				init: function () 
+				{
+					let marker = this.el;
 
-</body>
+					marker.addEventListener('markerFound', function() {
+						markerVisible[ marker.id ] = true;
+						// console.log( markerVisible );
+					});
+
+					marker.addEventListener('markerLost', function() {
+						markerVisible[ marker.id ] = false;
+						// console.log( markerVisible );
+					});
+
+				}
+			});
+
+			AFRAME.registerComponent('run', 
+			{
+				init: function()
+				{
+					console.log("Iniciando o jogo"); 
+					alert("Bem vindo!! Iniciando o jogo!!")
+				},
+				
+				tick: function (time, deltaTime) 
+				{
+					if (markerVisible["u"] && !currentWord.includes("u")) {
+						currentWord.push("u");
+					}
+
+					if (markerVisible["r"] && !currentWord.includes("r")) {
+						currentWord.push("r");
+					}
+
+					if (markerVisible["s"] && !currentWord.includes("s")) {
+						currentWord.push("s");
+					}
+
+					if (markerVisible["o"] && !currentWord.includes("o")) {
+						currentWord.push("o");
+					}
+
+					if (currentWord.length == 4) {
+						let finalWord = currentWord.join('');
+
+						if (finalWord === "urso") {
+							document.getElementById("ent-pergunta").setAttribute("visible", "false");
+							document.getElementById("ent-urso").setAttribute("visible", "false");
+							document.getElementById("ent-parabens").setAttribute("visible", "true");
+							setTimeout(function() {
+								alert("Parabéns, você acertou!");
+							}, 500);
+						} else {
+							document.getElementById("ent-pergunta").setAttribute("visible", "false");
+							document.getElementById("ent-urso").setAttribute("visible", "false");
+							document.getElementById("ent-incorreto").setAttribute("visible", "true");
+							setTimeout(function() {
+								alert("Incorreto, tente novamente!");
+							}, 500);
+						}
+
+						setTimeout(function() { 
+							window.location.reload(true); 
+						}, 1000);
+
+						currentWord = [];
+					}
+				}
+			});
+		</script>
+
+		<video id="video" width="200" height="200" autoplay muted></video>
+
+		<a-scene embedded arjs="sourceType: webcam;" autoplay muted>
+		<a-assets>
+			<img id="img-parabens" src="../imagens-site/palmass.png">
+			<img id="img-incorreto" src="../imagens-site/incor.png">
+		</a-assets>
+
+		<a-entity id="ent-pergunta" visible="true" position="-1 2 -9" geometry="primitive: plane; width: 3" material="color: #000000"
+			text="color: white; align: center; font: dejavu; value: Como se escreve o nome dessa figura?">
+		</a-entity>
+
+		<a-entity id="ent-urso" visible="true" gltf-model="url(scene.gltf)" scale="0.015625 0.015625 0.015625" position="-1 -2.09 -13"></a-entity>
+
+		<a-marker preset="pattern" type="pattern"
+			url="https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/patts%20dos%20marcadores/pattern-marcador_u.patt"
+			id="u"
+			registerevents>
+			<a-entity gltf-model="url(https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/Models/UU.gltf)"
+				position="1 1 0"
+				scale="0.1 0.1 0.1"
+				rotation="-90 0 0">
+			</a-entity>
+		</a-marker>
+
+		<a-marker preset="pattern" type="pattern"
+			url="https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/patts%20dos%20marcadores/pattern-marcador_r.patt" id="r" registerevents>
+			<a-entity
+				gltf-model="url(https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/Models/RR.gltf)"
+				position="1 1 0"
+				scale="0.1 0.1 0.1"
+				rotation="-90 0 0">
+			</a-entity>
+		</a-marker>
+
+		<a-marker preset="pattern" type="pattern"
+			url="https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/patts%20dos%20marcadores/pattern-marcador_s.patt" id="s" registerevents>
+			<a-entity
+				gltf-model="url(https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/Models/SS.gltf)"
+				position="1 1 0"
+				scale="0.1 0.1 0.1"
+				rotation="-90 0 0">
+			</a-entity>
+		</a-marker>
+
+		<a-marker preset="pattern" type="pattern"
+			url="https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/patts%20dos%20marcadores/pattern-marcador_o.patt"
+			id="o" registerevents>
+			<a-entity
+				gltf-model="url(https://raw.githubusercontent.com/EricaSantos2109/Alfabetizacao-Realidade-Aumentada/master/Models/OO.gltf)"
+				position="1 1 0"
+				scale="0.1 0.1 0.1"
+				rotation="-90 0 0">
+			</a-entity>
+		</a-marker>
+
+		<a-entity id="ent-parabens" visible="false" scale="5 4 4" position="-1.59 -0.59 -12">
+			<a-image src="#img-parabens"></a-image>
+		</a-entity>
+
+		<a-entity id="ent-incorreto" visible="false" scale="8 4 4" position="-1.0 1.0 -12">
+			<a-image src="#img-incorreto"></a-image>
+		</a-entity>
+
+		<a-entity run></a-entity>
+		</a-scene>
+
+	</body>
 </html>
